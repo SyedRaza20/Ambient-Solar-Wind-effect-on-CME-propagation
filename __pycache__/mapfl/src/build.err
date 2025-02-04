@@ -1,0 +1,3 @@
+ld: library not found for -ld_classic
+collect2: error: ld returned 1 exit status
+make: *** [all] Error 1

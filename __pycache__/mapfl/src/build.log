@@ -1,0 +1,1 @@
+gfortran -O3 -march=native -fopenmp -I/opt/homebrew/Cellar/hdf5-mpi/1.14.3/include/ psi_io.o mapfl.o -L/opt/homebrew/Cellar/hdf5-mpi/1.14.3/lib/ -lhdf5_fortran -lhdf5_hl_fortran -lhdf5 -lhdf5_hl -ld_classic -o mapfl

@@ -1,0 +1,42 @@
+DONKIDataCleaning
+
+Following are all the data cleaning sources from the original DONNKI_CMEs_cleaner.csv:
+
+1. I deleted the first 8 events because the data is not available in the online link for the ENLIL data files. 
+2. There were a total of 62 repeated "PE" values that I deleted.
+3. There was one event with the time_21_5 value of [], that I deleted because the filename did not exist in the ENLIL data files []
+4. I deleted two more events giving non-physical result: -ve transit hours for observed CMEs. 
+
+Following is important information: Talwinder comments:
+1) More about ML -- introduction 
+2) More analysis results of raw data -- data and methods.
+3) ML methodology -- data and methods.
+4) Operational setting in future works -- discussion.
+###################################################
+Data Cleaning:
+1) January and Feb data are not available.
+
+    The following link to explain missing data: https://iswa.ccmc.gsfc.nasa.gov/iswa_data_tree/model/heliosphere/wsa-enlil-cone/velocity-density-timeline-DATA/
+
+2) Duplicates (already deleted).
+3) not modeled. 
+fix these using the actual time_21_5 value (not the "not modeled" one)
+
+time_21_5: 2015-03-15T06:45Z
+Earth prediction: 
+
+4) File not found in the simulation.
+delete this one. 
+###################################################
+Events removed because they make no sense: 
+1)
+9/10/14 18:18	10	15	1400	45	9/10/14 20:00	20140909_041600_2.0	9/11/14 14:19	-25.1	9/10/14 13:13	-6.783333333	
+
+2) 
+12/20/14 1:25	23	-43	964	25	12/20/14 4:09	20141219_011300_2.0	12/21/14 5:45	-32.7	12/19/14 21:03	-7.1	
+###################################################
+
+A note about several PE files:
+
+ml_PE --> the machine learning output file 
+ml_transits --> The file that contains the transit hours for the best PE reduction for each type of input. 
