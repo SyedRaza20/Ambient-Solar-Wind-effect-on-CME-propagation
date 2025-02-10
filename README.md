@@ -1,0 +1,1 @@
+The code and figures contained within this repository are reserved under the Apache Lisense, Version 2.0. The materials contained were used to generate a scientific manuscript under the title "The Effect of Ambient Solar Wind on the Propagation of Coronal Mass Ejections towards Earth." This manuscript has now been submitted for publication in the Space Weather Journal.
